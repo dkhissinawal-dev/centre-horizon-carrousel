@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliders</title>
+
+  <!-- Police Open Sans (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Icônes Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- En-tête -->
+  <header>
+    <h1>Explorez notre galerie d'inspiration</h1>
+  </header>
+
+  <!-- Zone principale -->
+  <main>
+
+    <!-- Lien pour afficher / cacher la barre d'outils -->
+    <a href="#" id="toolbar-toggle">Afficher/Cacher</a>
+
+    <!-- Barre d'outils (masquée au départ) -->
+    <div id="toolbar" class="hidden">
+      <button id="slider-previous" title="Photo précédente"><i class="fa-solid fa-backward"></i></button>
+      <button id="slider-toggle" title="Démarrer / arrêter"><i class="fa-solid fa-play"></i></button>
+      <button id="slider-next" title="Photo suivante"><i class="fa-solid fa-forward"></i></button>
+      <button id="slider-random" title="Photo aléatoire"><i class="fa-solid fa-shuffle"></i></button>
+    </div>
+
+    <!-- Le carrousel -->
+    <figure id="slider">
+      <img id="slider-image" src="" alt="">
+      <figcaption id="slider-title">titre de l'image 1</figcaption>
+      <p id="slider-counter">1/6</p>
+    </figure>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
